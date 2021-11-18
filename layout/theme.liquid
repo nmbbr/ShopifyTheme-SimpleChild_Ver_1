@@ -186,17 +186,9 @@
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
 
+
+  {{ 'w3topnav.js' | asset_url | script_tag }}
 
   {{ 'theme.js' | asset_url | script_tag }}
 
