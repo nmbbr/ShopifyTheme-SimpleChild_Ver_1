@@ -1,48 +1,41 @@
-
-
-
-.garbage {
-    background: chartreuse ;
-  }
-  
-  
+/*-------------------------------------*/
+/*-------------------------------------*/
   #HeaderLogoWrapper {
     margin:0;
   }
   
-  
-  
-  
-  
+
+
+/*#region w3 topnav -------------*/
+
   .W3topnav {
     overflow: hidden;
     background-color: #333;
+    a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    .icon {
+      display: none;
+    }
   }
-  
-  .W3topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .W3topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .W3topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .W3topnav .icon {
-    display: none;
-  }
-  
+
+
+  /*#region w3 topnav BREAKPOINTS -------------*/
+
   @media screen and (max-width: 600px) {
   .W3topnav a:not(:first-child) {display: none;}
   .W3topnav a.icon {
@@ -64,3 +57,7 @@
       text-align: left;
     }
   }
+
+  /*#endregion w3 topnav BREAKPOINTS -------------*/
+
+ /*#endregion w3 topnav -------------*/

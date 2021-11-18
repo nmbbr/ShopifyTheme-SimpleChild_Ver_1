@@ -1,11 +1,10 @@
-.garbage {
-  background: chartreuse;
-}
-
+/*-------------------------------------*/
+/*-------------------------------------*/
 #HeaderLogoWrapper {
   margin: 0;
 }
 
+/*#region w3 topnav -------------*/
 .W3topnav {
   overflow: hidden;
   background-color: #333;
@@ -35,6 +34,7 @@
   display: none;
 }
 
+/*#region w3 topnav BREAKPOINTS -------------*/
 @media screen and (max-width: 600px) {
   .W3topnav a:not(:first-child) {
     display: none;
@@ -60,4 +60,7 @@
     text-align: left;
   }
 }
+
+/*#endregion w3 topnav BREAKPOINTS -------------*/
+/*#endregion w3 topnav -------------*/
 /*# sourceMappingURL=my-header-styles.css.map */
