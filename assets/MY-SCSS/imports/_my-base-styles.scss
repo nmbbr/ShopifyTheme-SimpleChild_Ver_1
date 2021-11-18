@@ -93,4 +93,12 @@ body { background: $background-color !important; color : $foreground-color !impo
 #contact_form {
     width:90%;
     textarea:width 100% !important;
+    input, select, textarea {
+        border-radius: 0;
+        max-width: 100%;
+        background-color: #f4f4f4;
+        border: 0;
+        padding: 8px;
+        width: 100%;
+    }
 }
