@@ -1,43 +1,49 @@
+<!-------------------------------------|||||||||||||||||||||||------------------------------------------->
+<!-------------------------------------|||||||| START ||||||||------------------------------------------->
+<!-------------------------------------|||||||||||||||||||||||------------------------------------------->
+
+
+
+<!--#region topnav ('w3 schools' responsive hamburger menu--------------------HEADER MENU----->
+
 <div class="topnav" id="myTopnav">
-    <a>
 
-<!--#region LOGO---------------------------------------->
+  <!--#region LOGO---------------------------------------->
+  <a> 
+    {%- unless section.settings.logo == blank -%}
+      {%- assign logo_max_height = section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio -%}
+      {% if logo_max_height > 600 %}
+        {%- assign logo_max_width = 600 | times: section.settings.logo.aspect_ratio -%}
+      {% else %}
+        {%- assign logo_max_width = section.settings.logo_max_width -%}
+      {% endif %}
 
-{%- unless section.settings.logo == blank -%}
-  {%- assign logo_max_height = section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio -%}
-  {% if logo_max_height > 600 %}
-    {%- assign logo_max_width = 600 | times: section.settings.logo.aspect_ratio -%}
-  {% else %}
-    {%- assign logo_max_width = section.settings.logo_max_width -%}
-  {% endif %}
+      <style>
+        .site-header__logo {
+          width: {{ logo_max_width | append: 'px'}};
+        }
+        #HeaderLogoWrapper {
+          max-width: {{ logo_max_width | append: 'px'}} !important;
+        }
+      </style>
+    {%- endunless -%}
 
-  <style>
-    .site-header__logo {
-      width: {{ logo_max_width | append: 'px'}};
-    }
-    #HeaderLogoWrapper {
-      max-width: {{ logo_max_width | append: 'px'}} !important;
-    }
-  </style>
-{%- endunless -%}
+  </a>
+  <!--#endregion LOGO---------------------------------------->
 
-<!--#endregion LOGO---------------------------------------->
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</div>
 
 
-    </a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-
+<!--#endregion topnav ('w3 schools' responsive hamburger menu-----------------------HEADER MENU----->
 
 
 
 
-
+<!--#region ANNOUNCEMENTS---------------------------------------->
 
 
 {% if section.settings.show_announcement and section.settings.home_page_only == false or request.page_type == 'index' %}
@@ -70,13 +76,22 @@
   <div class="page-border"></div>
 {% endif %}
 
+<!--#endregion ANNOUNCEMENTS---------------------------------------->
+
+
+
+
+
+<!--#region site wrapper ---------------------------------------------------------SITE WRAPPER----------->
 <div class="site-wrapper">
   <div class="top-bar grid">
 
-    <div class="grid__item medium-up--one-fifth small--one-half">
+    <!--#region top bar search-------------------------------------------------HEADER SEARCH--------->
 
 
-      <!--<div class="top-bar__search">
+    <!--<div class="grid__item medium-up--one-fifth small--one-half">
+
+      <div class="top-bar__search">
         <a href="{{ routes.search_url }}" class="medium-up--hide">
           {% include 'icon-search' %}
         </a>
@@ -88,10 +103,13 @@
           </button>
           <input type="search" name="q" class="search-bar__input" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
         </form>
-      </div>-->
+      </div>
+    </div>-->
+
+    <!--#endregion top bar search-------------------------------------------------HEADER SEARCH--------->
 
 
-    </div>
+    <!--#region customer accounts-------------------------------------------------CUSTOMER ACCOUNTS HEADER-------->
 
     {% if shop.customer_accounts_enabled %}
       <div class="grid__item medium-up--two-fifths small--hide">
@@ -114,6 +132,11 @@
       </div>
     {% endif %}
 
+    <!--#endregion customer accounts-------------------------------------------------CUSTOMER ACCOUNTS HEADER-------->
+
+
+    <!--#region cart header button-------------------------------------------------CART HEADER-------->
+
     <div class="grid__item {% if shop.customer_accounts_enabled %} medium-up--two-fifths {% else %} medium-up--four-fifths {% endif %} small--one-half text-right">
       <a href="{{ routes.cart_url }}" class="site-header__cart">
         {% include 'icon-cart' %}
@@ -123,9 +146,14 @@
         </span>
       </a>
     </div>
-  </div>
 
+    <!--#endregion cart header button-------------------------------------------------CART HEADER-------->
+
+  </div>
   <hr class="small--hide hr--border">
+
+
+  <!--#region header simple theme default---------------------------------SIMPLE THEME DEFAULT HEADER-------->
 
   <header class="site-header grid medium-up--grid--table" role="banner">
     <div class="grid__item small--text-center">
@@ -186,9 +214,24 @@
       </div>
     {% endunless %}
   </header>
-</div>
+
+  <!--#endregion header simple theme default---------------------------------SIMPLE THEME DEFAULT HEADER-------->
+
+</div><!--#endregion wrapper -----------------------------------------------------------SITE WRAPPER----------->
 
 
+
+<!-------------------------------||||||||||||||||||||||||||||||||||||----------------------------->
+<!-------------------------------||||||||||||||||||||||||||||||||||||----------------------------->
+<!-------------------------------|||||||| end relevant to me ||||||||----------------------------->
+<!-------------------------------||||||||||||||||||||||||||||||||||||----------------------------->
+<!-------------------------------||||||||||||||||||||||||||||||||||||----------------------------->
+<!-------------------------------||||||||||||||||||||||||||||||||||||----------------------------->
+
+
+
+
+<!--#region "schema??" --------------------------------------------------------------"schema??"----------->
 
 {% schema %}
 {
@@ -539,3 +582,11 @@
   ]
 }
 {% endschema %}
+
+
+<!--#endregion "schema??" --------------------------------------------------------------"schema??"----------->
+
+
+<!-------------------------------------|||||||||||||||||||||||------------------------------------------->
+<!-------------------------------------||||||||| END |||||||||------------------------------------------->
+<!-------------------------------------|||||||||||||||||||||||------------------------------------------->
