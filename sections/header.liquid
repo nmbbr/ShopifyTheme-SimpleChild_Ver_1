@@ -218,9 +218,28 @@
       </div>
     {% endunless %}
   </header>
+
+
+  <!--#region w3 topnav javascript ------------------------------------->  
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <!--#endregion w3 topnav javascript ------------------------------------->  
+
+
+
 </div>
 
 
+<!--#region "schema" ----------------------------------------------------------------------------------->  
 
 {% schema %}
 {
@@ -571,3 +590,5 @@
   ]
 }
 {% endschema %}
+
+<!--#endregion "schema" ----------------------------------------------------------------------------------->  
