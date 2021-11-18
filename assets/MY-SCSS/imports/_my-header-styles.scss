@@ -6,7 +6,10 @@
   #HeaderLogoWrapper { margin:0; }
   
   .site-header {display : none ;}
-  .top-bar.grid { background: burlywood;}
+  .top-bar.grid { 
+    background: $topbar-background ;
+    display: $topbar-visibility ;
+  }
 
  .site-header__logo { margin: 0; }
 
