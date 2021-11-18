@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "gift-card.scss"
+    ],
+    "names": [],
+    "file": "gift-card.min.css"
+}
