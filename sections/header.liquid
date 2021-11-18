@@ -59,6 +59,7 @@
 <div class="site-wrapper">
   <div class="top-bar grid">
 
+    <!--#region search--------------------------------------------->
     <div class="grid__item medium-up--one-fifth small--one-half">
       <div class="top-bar__search">
         <a href="{{ routes.search_url }}" class="medium-up--hide">
@@ -74,6 +75,9 @@
         </form>
       </div>
     </div>
+    <!--#endregion search--------------------------------------------->
+
+    <!--#region accounts--------------------------------------------->
 
     {% if shop.customer_accounts_enabled %}
       <div class="grid__item medium-up--two-fifths small--hide">
@@ -95,6 +99,9 @@
         </span>
       </div>
     {% endif %}
+    <!--#endregion accounts--------------------------------------------->
+
+    <!--#region cart--------------------------------------------->
 
     <div class="grid__item {% if shop.customer_accounts_enabled %} medium-up--two-fifths {% else %} medium-up--four-fifths {% endif %} small--one-half text-right">
       <a href="{{ routes.cart_url }}" class="site-header__cart">
@@ -107,14 +114,34 @@
     </div>
   </div>
 
-  <hr class="small--hide hr--border">
+  <!--#endregion cart--------------------------------------------->
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+  <hr class="small--hide hr--border"><!-----------HR line ----------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+
+
+
+
+
 
   <header class="site-header grid medium-up--grid--table" role="banner">
 
+
+    <!--#region W3topnav --------------------------------------------->
     <div class="W3topnav" id="myTopnav">
-      
+
+      <!--#region logo ---------------------------HEADER LOGO-->
+
       <a>
-        <!--#region logo ---------------------------HEADER LOGO-->
         <div itemscope itemtype="http://schema.org/Organization">
           {% comment %}Use the uploaded logo from theme settings if enabled.Site name uses `h1` tag on homepage, div on other pages.{% endcomment %}
           {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -161,19 +188,24 @@
               {% endif %}
             {% endif %}
           {% endif %}
+        </div><!--"itemscope itemtype----->
 
-
-        </div>
-        <!--#endregion logo ---------------------------HEADER LOGO-->
       </a>
+
+      <!--#endregion logo ---------------------------HEADER LOGO-->  
+     
+      <!--#region menu LINKS --------------------------------------------->
+
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
+      <!--#endregion menu LINKS --------------------------------------------->
 
-   </div><!-- ee ".W3topnav"-->
+    </div>
+    <!--#endregion W3topnav --------------------------------------------->
 
     
 
