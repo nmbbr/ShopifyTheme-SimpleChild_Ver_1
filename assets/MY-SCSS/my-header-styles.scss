@@ -70,6 +70,8 @@
  .topnav {
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  align-items: center;
 }
 
 .topnav a {
