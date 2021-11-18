@@ -63,7 +63,11 @@
  /*#endregion w3 topnav -------------*/
 
 
-
+ .site-header__logo {
+  display: block;
+  margin: 0; 
+  max-width: 100%;
+}
 
 
 
