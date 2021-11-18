@@ -3,21 +3,16 @@
 /*-------------------------------------*/
 
 
-  #HeaderLogoWrapper {
-    margin:0;
-  }
+  #HeaderLogoWrapper { margin:0; }
   
-
-
+  .site-header {display : none ;}
+  .top-bar.grid { background: burlywood;}
 
  .site-header__logo { margin: 0; }
 
 
 
- .topnav {
-  overflow: hidden;
-  background-color: $menu-background ;
-}
+ .topnav { overflow: hidden;background-color: $menu-background ;}
 
 .topnav a {
   float: left;
