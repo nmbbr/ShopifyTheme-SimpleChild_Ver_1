@@ -54,7 +54,6 @@ body{ background: $background-color !important; }
 .page-border { background-color:blue !important;}
 #HeaderLogoWrapper { background: green; }
 button#ToggleMobileMenu { background: blue;}
-.site-header__cart { border: 5px solid red; }
 .site-nav__item a[href*="cart"] { background: purple; }
 #shopify-section-sidebar div { background:saddlebrown !important;}
 /*#endregion colors applied -----------------------------*/
@@ -67,9 +66,12 @@ button#ToggleMobileMenu { background: blue;}
 
 
 
-/*#region borders applied -------------------------------*/
+/*#region borders applied ------------------if you arent using border ignore----*/
 
 /*--
+
+.site-header__cart { border: 5px solid red; }
+
 .main-content {border:10px solid red;}
 
 #shopify-section-collection-template .grid__item { border: $border-size-xsmall solid red !important;}
