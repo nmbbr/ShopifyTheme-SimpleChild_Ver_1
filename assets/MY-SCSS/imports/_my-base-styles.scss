@@ -90,6 +90,8 @@ body { background: $background-color !important; color : $foreground-color !impo
 
 /*#endregion borders applied -----------------------------*/
 
+
+/*------------------------------------------*/
 #contact_form {
     width:90%;
     textarea:width 100% !important;
@@ -101,5 +103,10 @@ body { background: $background-color !important; color : $foreground-color !impo
         padding: 8px;
         width: 100%;
     }
-    .btn { background: greenyellow;}
+    
+    .btn { 
+        background: $contact-button-background-color ;
+        color: $contact-button-foreground-color ;
+    }
 }
+/*------------------------------------------*/
