@@ -98,12 +98,12 @@ body { background: $background-color !important; color : $foreground-color !impo
     input, select, textarea {
         border-radius: 0;
         max-width: 100%;
-        background-color: #f4f4f4;
+        background-color: $contact-textarea-background ;
         border: 0;
         padding: 8px;
         width: 100%;
     }
-    
+
     .btn { 
         background: $contact-button-background-color ;
         color: $contact-button-foreground-color ;
