@@ -1,0 +1,67 @@
+/////////////////////
+/////////////////////
+/////////////////////
+
+
+/*#region QUESTIONS---------------------------------*/
+
+
+//////////////////////// Do you even want borders ?
+//  * { border: none !important }
+
+//////////////////////// Do you just want a white background ?
+//  * { background : white !important }
+
+//////////////////////// Or do you just want a blue background ?
+//    * { background : blue !important }
+
+
+
+/*#endregion QUESTIONS---------------------------------*/
+
+
+
+/*#region variables---------------------------------*/
+
+    /*#region colors ----*/    
+        $style_1_background : purple ;
+        $style_1_foreground : orange ;
+        $background-color: rgb(48, 30, 202) ;
+        $foreground-color: red ;
+    /*#endregion colors ----*/
+
+    /*#region borders ----*/    
+        $border-color-default : purple ;
+        $border-size-default : 10px ;
+        $border-size-xsmall : 2px ;
+    /*#endregion borders ----*/   
+
+/*#endregion variables --------------------------------*/
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*#region colors applied -------------------------------*/
+body{ background: $background-color !important; }
+.page-border { background-color:blue !important;}
+#HeaderLogoWrapper { background: green; }
+button#ToggleMobileMenu { background: blue;}
+.site-header__cart { border: 5px solid red; }
+.site-nav__item a[href*="cart"] { background: purple; }
+#shopify-section-sidebar div { background:saddlebrown !important;}
+/*#endregion colors applied -----------------------------*/
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/*#region borders applied -------------------------------*/
+//.main-content {border:10px solid red;}
+//#shopify-section-collection-template .grid__item { border: $border-size-xsmall solid red !important;}
+//.site-nav__item a[href*="cart"] { border: $border-size-xsmall solid lightgreen;}
+/*#endregion borders applied -----------------------------*/
