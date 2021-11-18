@@ -9,6 +9,8 @@
   .top-bar.grid { 
     background: $topbar-background ;
     display: $topbar-visibility ;
+    padding-left: $topbar-padding-left ;
+    padding-right: $topbar-padding-right ;
   }
 
  .site-header__logo { margin: 0; }
