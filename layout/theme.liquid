@@ -187,8 +187,16 @@
   </ul>
 
 
-
-
+<script>
+  function myFunction() {
+    var x = document.getElementById("W3topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script> 
   {{ 'theme.js' | asset_url | script_tag }}
 
 
