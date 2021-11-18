@@ -1,3 +1,5 @@
+<!--#region logo stylings--------------------------------------------->
+
 {%- unless section.settings.logo == blank -%}
   {%- assign logo_max_height = section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio -%}
   {% if logo_max_height > 600 %}
@@ -15,6 +17,11 @@
     }
   </style>
 {%- endunless -%}
+
+<!--#endregion logo stylings--------------------------------------------->
+
+
+<!--#region announcements--------------------------------------------->
 
 {% if section.settings.show_announcement and section.settings.home_page_only == false or request.page_type == 'index' %}
   <style>
@@ -45,6 +52,9 @@
 {% else %}
   <div class="page-border"></div>
 {% endif %}
+
+<!--#endregion announcements--------------------------------------------->
+
 
 <div class="site-wrapper">
   <div class="top-bar grid">
