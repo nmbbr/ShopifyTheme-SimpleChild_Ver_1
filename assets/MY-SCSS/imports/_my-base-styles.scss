@@ -2,7 +2,7 @@ $background-color: rgb(228, 172, 211) ;
 $foreground-color: red ;
 $heading-color : rgb(55, 0, 255) ;
 $border-color :brown ;
-
+$breadcrumb-color : green ;
 
 
 
@@ -61,6 +61,10 @@ $border-color :brown ;
 body { background: $background-color !important; color : $foreground-color !important ; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { color: $heading-color;}
+
+.breadcrumb-nav a {
+    color: $breadcrumb-color ;
+}
 
 .page-border { background-color:$border-color !important;}
 
