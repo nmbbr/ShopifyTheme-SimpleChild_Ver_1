@@ -1,5 +1,8 @@
 /*-------------------------------------*/
+@import 'my-colors-and-borders';
 /*-------------------------------------*/
+
+
   #HeaderLogoWrapper {
     margin:0;
   }
@@ -13,13 +16,13 @@
 
  .topnav {
   overflow: hidden;
-  background-color: rgb(211, 209, 209);
+  background-color: $menu-background ;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: $menu-links-color;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,7 +31,7 @@
 
 .topnav a:hover {
   //background-color: #ddd;
-  color: yellow;
+  color: $menu-links-hover-color ;
 }
 
 .topnav a.active {
