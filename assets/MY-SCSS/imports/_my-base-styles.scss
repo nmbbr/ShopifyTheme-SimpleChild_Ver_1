@@ -90,10 +90,7 @@ body { background: $background-color !important; color : $foreground-color !impo
 
 /*#endregion borders applied -----------------------------*/
 
-.contact-form { 
-    .form-vertical input, .form-vertical select, .form-vertical textarea {
-        display: block;
-        margin-bottom: 8px;
-        min-width: 90%;
-    }
+#contact-form {
+    width:90%;
+    textarea:width 100% !important;
 }
