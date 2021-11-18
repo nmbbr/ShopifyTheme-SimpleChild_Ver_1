@@ -5,13 +5,13 @@
 /*#region QUESTIONS---------------------------------*/
 
 
-//////////////////////// Do you even want borders ?
-//  * { border: none !important }
+/*------ Do you even want borders ? -----------*/
+/*------  * { border: none !important } -----------*/
 
-//////////////////////// Do you just want a white background ?
-//  * { background : white !important }
+/*------ Do you just want a white background ? -----------*/
+/*------   * { background : white !important } -----------*/
 
-//////////////////////// Or do you just want a blue background ?
+/*------  Or do you just want a blue background ? -----------*/
    * { background : blue !important }
 
 
@@ -62,7 +62,13 @@ button#ToggleMobileMenu { background: blue;}
 
 
 /*#region borders applied -------------------------------*/
-//.main-content {border:10px solid red;}
-//#shopify-section-collection-template .grid__item { border: $border-size-xsmall solid red !important;}
-//.site-nav__item a[href*="cart"] { border: $border-size-xsmall solid lightgreen;}
+
+/*--
+.main-content {border:10px solid red;}
+
+#shopify-section-collection-template .grid__item { border: $border-size-xsmall solid red !important;}
+
+.site-nav__item a[href*="cart"] { border: $border-size-xsmall solid lightgreen;}
+--*/
+
 /*#endregion borders applied -----------------------------*/
