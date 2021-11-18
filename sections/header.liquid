@@ -129,6 +129,12 @@
 <!----------------------------------------------------------------------------->
 
 <div class="topnav" id="myTopnav">
+  <a href="{{ routes.root_url }}" itemprop="url">
+    <img class="site-header__logo" src="{{ section.settings.logo | img_url: image_size }}"
+    srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+    alt="{{ section.settings.logo.alt | default: shop.name }}"
+    itemprop="logo">
+  </a>
   <a href="#home" class="active">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
@@ -153,12 +159,10 @@
   <header class="site-header grid medium-up--grid--table" role="banner">
 
 
-    <!--#region W3topnav --------------------------------------------->
-    <div class="W3topnav" id="myTopnav">
 
       <!--#region logo ---------------------------HEADER LOGO-->
 
-      <a>
+
         <div itemscope itemtype="http://schema.org/Organization">
           {% comment %}Use the uploaded logo from theme settings if enabled.Site name uses `h1` tag on homepage, div on other pages.{% endcomment %}
           {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -207,24 +211,12 @@
           {% endif %}
         </div><!--"itemscope itemtype----->
 
-      </a>
+
 
       <!--#endregion logo ---------------------------HEADER LOGO-->  
      
-      <!--#region menu LINKS --------------------------------------------->
 
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <!--#endregion menu LINKS --------------------------------------------->
 
-    </div>
-    <!--#endregion W3topnav --------------------------------------------->
-
-    
 
 
     {% unless section.settings.tagline == blank %}
