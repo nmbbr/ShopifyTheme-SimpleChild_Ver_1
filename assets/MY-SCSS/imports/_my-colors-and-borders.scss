@@ -1,21 +1,52 @@
-$background-color: rgb(224, 207, 219) ;
-$foreground-color: red ;
+$style-1-background : rgb(16, 1, 219) ;
+$style-1-foreground : rgb(23, 24, 22) ;
+
+$style-2-background : rgb(57, 235, 65) ;
+$style-2-foreground : rgb(231, 20, 238) ;
+
+$style-3-background : rgb(225, 255, 144) ;
+$style-3-foreground : rgb(156, 11, 252) ;
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+
+
+
+/*---------------------------------------*/
+
+$background-color: $style-1-background ;
+$foreground-color: $style-1-foreground ;
 $heading-color : rgb(55, 0, 255) ;
 $border-color :brown ;
-$breadcrumb-color : green ;
-$menu-background : rgb(221, 221, 221);
-$menu-links-color : rgb(65, 70, 71) ;
-$menu-links-hover-color : yellow ;
-$topbar-background : rgb(213, 228, 213);
+/*---------------------------------------*/
+
+$topbar-background : $style-2-background ;
 $topbar-visibility : visible !important ;
 $topbar-padding-left :30px ;
 $topbar-padding-right :120px ;
+/*---------------------------------------*/
+
+
+$menu-background : $style-3-background;
+$menu-links-color : $style-3-foreground ;
+$menu-links-hover-color : yellow ;
+/*---------------------------------------*/
+
+
+$breadcrumb-color : green ;
+
+/*---------------------------------------*/
 
 $contact-button-foreground-color : rgb(31, 27, 27) ;
 $contact-button-background-color : rgb(101, 230, 144) ;
 $contact-textarea-background : rgb(253, 252, 242) ;
 $contact-textarea-border : 1px solid black ;
 
+/*---------------------------------------*/
+
 $footer-background : rgb(215, 218, 223) ;
 $footer-foreground : rgb(46, 46, 46) ;
 
+/*---------------------------------------*/
