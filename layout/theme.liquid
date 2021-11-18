@@ -189,7 +189,7 @@
 
 <script>
   function myFunction() {
-    var x = document.getElementById("W3topnav");
+    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
     } else {
@@ -197,6 +197,7 @@
     }
   }
 </script> 
+
   {{ 'theme.js' | asset_url | script_tag }}
 
 
