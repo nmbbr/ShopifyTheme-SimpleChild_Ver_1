@@ -3,5 +3,7 @@
 
 ////////////////////////// bb lightbox 
 .mfp-bg {
-    background: $style-1-background ;
+    background: $product-lightbox-background ;
 }
+
+img.mfp-img { background: $product-lightbox-background ; }
