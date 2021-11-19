@@ -74,14 +74,12 @@ h5 { color : $h5-foreground !important ; }
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
-    span:nth-child(2) {
-        background: rgb(228, 192, 192);
-        color : pink;
-    }
-    span:nth-child(3) {
-        background: rgb(143, 248, 101);
-        color : rgb(255, 13, 255) ;
-    }
+    span:nth-child(1) { color : red ; }
+    span:nth-child(2) { color : orange ; }
+    span:nth-child(3) {color : yellow ; }
+    span:nth-child(4) {color : yellowgreen ; }
+    span:nth-child(5) {color : green ; }
+    span:nth-child(6) {color : blue ; }
  }
 
 .page-border { background-color:$border-color !important;}
