@@ -67,16 +67,17 @@ h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
     font-size: 15px ;
-    //color: $breadcrumb-current-page-foreground ;
+    color: $breadcrumb-current-page-foreground ;
     a {
         color : $breadcrumb-links-foreground ;
     }
     span:nth-child(1) {
-
-        color : $breadcrumbs-first-level-link-foreground ;
+        //background: red;
+        color : rgb(60, 255, 0) ;
     }
     span:nth-child(3) {
-        color : $breadcrumbs-first-second-link-foreground ;
+        //background: red;
+        color : magenta ;
     }
  }
 
