@@ -59,9 +59,11 @@ body {
     color : $foreground-color !important ;
  }
 
-//.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { 
-//    color: $heading-color;
-//}
+h1 { color : $h1-foreground ; }
+h2 { color : $h2-foreground ; }
+h3 { color : $h3-foreground ; }
+h4 { color : $h4-foreground ; }
+h5 { color : $h5-foreground ; }
 
 .breadcrumb-nav a { color: $breadcrumb-background ; }
 
