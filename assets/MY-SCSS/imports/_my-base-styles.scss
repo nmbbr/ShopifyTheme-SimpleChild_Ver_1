@@ -56,7 +56,7 @@
 /*#region colors applied -------------------------------*/
 body { background: $background-color !important; color : $foreground-color !important ; }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { color: $heading-color;}
+//.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { color: $heading-color;}
 
 .breadcrumb-nav a {
     color: $breadcrumb-color ;
@@ -119,11 +119,3 @@ body { background: $background-color !important; color : $foreground-color !impo
 /*-----------------BB checkout confirmation page ----*/
 /*------(only "shopify plus" gets access to checkout.liquid ------------*/
 
-
-header.banner { 
-    background: green;
-}
-
-aside[role="complementary"] {
-    padding: 2px;
-}
