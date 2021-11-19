@@ -71,6 +71,14 @@ h5 { color : $h5-foreground !important ; }
     a {
         color : $breadcrumb-links-foreground ;
     }
+    span:nth-child(1) {
+        //background: red;
+        color : rgb(60, 255, 0) ;
+    }
+    span:nth-child(3) {
+        //background: red;
+        color : magenta ;
+    }
  }
 
 .page-border { background-color:$border-color !important;}
