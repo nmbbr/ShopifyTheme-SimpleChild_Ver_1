@@ -81,7 +81,7 @@ h5 { color : $h5-foreground !important ; }
     span:nth-child(5) {color : green ; }
     span:nth-child(6) {color : blue ; }
     /* Links that end in ".org" */
-    span[itemprop="position"] {
+    span[itemprop="itemListElement"] {
         color: red !important;
     }
  }
