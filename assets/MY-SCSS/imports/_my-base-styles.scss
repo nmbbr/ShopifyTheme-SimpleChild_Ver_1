@@ -116,8 +116,8 @@ body { background: $background-color !important; color : $foreground-color !impo
 
 
 
-/*-----------------BB checkout confirmation page ----
-------(only "shopify plus" gets access to checkout.liquid ------------*/
+/*-----------------BB checkout confirmation page ----*/
+/*------(only "shopify plus" gets access to checkout.liquid ------------*/
 
 
 header.banner { 
@@ -126,4 +126,4 @@ header.banner {
 
 aside[role="complementary"] {
     padding: 2px;
-  }
+}
