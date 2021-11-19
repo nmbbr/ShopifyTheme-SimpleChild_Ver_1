@@ -66,7 +66,7 @@ h4 { color : $h4-foreground !important ; }
 h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
-    span {color : red ; }
+    span:nth-child(3) span {color : red ; background: orange; }
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
