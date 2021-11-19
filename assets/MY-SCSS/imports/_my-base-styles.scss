@@ -66,20 +66,19 @@ h4 { color : $h4-foreground !important ; }
 h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
-    font-size: 15px ;
-    //color: $breadcrumb-current-page-foreground ;
+    span {color : red ; }
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
     span:nth-of-type(1) a {
         font-size: 15px;
-        color: yellow;
-        background: lightgreen;
+        color: green;
+       // background: lightgreen;
     }
     span:nth-of-type(3) a {
         font-size: 15px;
-        color: orange !important;
-        background: green !important;
+        color: yellowgreen !important;
+        //background: green !important;
     }
  }
  
