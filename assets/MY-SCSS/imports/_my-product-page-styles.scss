@@ -1,6 +1,10 @@
 .product-single__title { color : $product-title-foreground ; }
-#description p { color : $product-description-foreground ; }
-
+#description {
+    text-align: left !important;
+    p { 
+        color : $product-description-foreground ;
+    }
+}
 ////////////////////////// bb lightbox 
 .mfp-bg {
     background: $product-lightbox-background ;
