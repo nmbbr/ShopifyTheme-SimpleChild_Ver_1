@@ -19,12 +19,12 @@
 
 .topnav { 
    overflow: hidden;
-   background-color: $menu-background ;
+   background-color: $topnav-background ;
    padding-right: 23px;
   a {
     float: left;
     display: block;
-    color: $menu-links-color;
+    color: $topnav-links-color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
