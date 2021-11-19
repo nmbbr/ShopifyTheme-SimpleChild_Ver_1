@@ -66,15 +66,21 @@ h4 { color : $h4-foreground !important ; }
 h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
-    span:nth-child(3) span {color : red ; background: orange; }
+    /*------current page color ----*/
+    span:nth-child(5) span {
+        color : red ; 
+        background: orange; 
+    }
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
+    /*------home page color ----*/
     span:nth-of-type(1) a {
         font-size: 15px;
         color: green;
        // background: lightgreen;
     }
+    /*------level 2 color ----*/
     span:nth-of-type(3) a {
         font-size: 15px;
         color: yellowgreen !important;
