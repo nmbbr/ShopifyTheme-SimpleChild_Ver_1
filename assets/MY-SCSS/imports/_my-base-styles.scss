@@ -72,13 +72,15 @@ h5 { color : $h5-foreground !important ; }
         color : $style-1-foreground !important ;
     }
     //span:nth-child(1) { color : red ; }
+    /*--
     span:nth-child(2) { color : orange ; }
     span:nth-child(3) {color : yellow ; }
     span:nth-child(4) {color : yellowgreen ; }
     span:nth-child(5) {color : green ; }
     span:nth-child(6) {color : blue ; }
+    --*/
     /* Links that end in ".org" */
-    span[itemprop="itemListElement"] {
+    span:nth-of-type(2) {
         color: red !important;
     }
  }
