@@ -71,6 +71,9 @@ h5 { color : $h5-foreground !important ; }
     a {
         color : $breadcrumb-links-foreground ;
     }
+    .breadcrumb-nav__separator {
+        color : $style-1-foreground !important ;
+    }
     span:nth-child(2) {
         background: rgb(228, 192, 192);
         color : pink;
