@@ -24,20 +24,14 @@
   a {
     float: left;
     display: block;
-    color: $topnav-links-color;
+    color: $topnav-links-foreground;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
-  a:hover {
-    //background-color: #ddd;
-    color: $style-3-foreground-hover ;
-  }
-  a.active {
-    //background-color: #04AA6D;
-    //color: white;
-  }
+  a:hover { color: $topnav-links-foreground-hover; }
+//  a.active {}
   .icon {
     display: none;
   }

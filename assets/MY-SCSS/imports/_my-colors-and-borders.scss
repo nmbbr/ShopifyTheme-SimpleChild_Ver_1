@@ -37,19 +37,25 @@ $topbar-padding-right :120px ;
 
 
 $topnav-background : $style-1-background;
-$topnav-links-color : $style-1-foreground ;
+$topnav-links-foreground : $style-1-foreground ;
 $topnav-links-hover-color : $style-1-foreground-hover ;
 /*---------------------------------------*/
 
 
-$breadcrumb-color : green ;
+$breadcrumb-background : green ;
+
+/*---------------------------------------*/
+$product-title-foreground : orange ;
+
+
+
 
 /*---------------------------------------*/
 
-$contact-button-foreground-color : rgb(31, 27, 27) ;
-$contact-button-background-color : rgb(101, 230, 144) ;
+
+$contact-button-foreground : rgb(31, 27, 27) ;
+$contact-button-background : rgb(101, 230, 144) ;
 $contact-textarea-background : rgb(253, 252, 242) ;
-$contact-textarea-border : 1px solid black ;
 
 /*---------------------------------------*/
 

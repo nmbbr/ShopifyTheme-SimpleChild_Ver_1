@@ -54,20 +54,25 @@
 
 
 /*#region colors applied -------------------------------*/
-body { background: $background-color !important; color : $foreground-color !important ; }
+body { 
+    background: $background-color !important; 
+    color : $foreground-color !important ;
+ }
 
-//.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { color: $heading-color;}
+//.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { 
+//    color: $heading-color;
+//}
 
-.breadcrumb-nav a {
-    color: $breadcrumb-color ;
-}
+.breadcrumb-nav a { color: $breadcrumb-background ; }
 
 .page-border { background-color:$border-color !important;}
 
 //#HeaderLogoWrapper { background: green; }
 //button#ToggleMobileMenu { background: blue;}
 //.site-nav__item a[href*="cart"] { background: purple; }
-//#shopify-section-sidebar div { background:saddlebrown !important;}
+//#shopify-section-sidebar div { 
+//    background:saddlebrown !important;
+//}
 /*#endregion colors applied -----------------------------*/
 
 
@@ -104,12 +109,12 @@ body { background: $background-color !important; color : $foreground-color !impo
         border: 0;
         padding: 8px;
         width: 100%;
-        border: 1px solid black ;
+        border: 1px solid $style-1-foreground ;
     }
 
     .btn { 
-        background: $contact-button-background-color ;
-        color: $contact-button-foreground-color ;
+        background: $contact-button-background ;
+        color: $contact-button-foreground ;
     }
 }
 /*------------------------------------------*/
