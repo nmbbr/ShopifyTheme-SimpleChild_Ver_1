@@ -12,5 +12,7 @@ img.mfp-img { background: $product-lightbox-background ; }
     .grid__item {
         border:2px solid red;
         clear: none !important;
+        width:20%;
+        padding:2px;
     }
 }
