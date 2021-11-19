@@ -67,20 +67,10 @@ h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
     font-size: 15px ;
-    a {
-        color : chartreuse ;
-    }
+    color : chartreuse ;
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
-    //span:nth-child(1) { color : red ; }
-    /*--
-    span:nth-child(2) { color : orange ; }
-    span:nth-child(3) {color : yellow ; }
-    span:nth-child(4) {color : yellowgreen ; }
-    span:nth-child(5) {color : green ; }
-    span:nth-child(6) {color : blue ; }
-    --*/
     /* Links that end in ".org" */
     span:nth-of-type(2) a { color: magenta !important; }
     //span:nth-of-type(3) a { color: lightgreen !important; }
