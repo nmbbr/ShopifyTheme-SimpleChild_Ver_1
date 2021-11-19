@@ -66,6 +66,7 @@ h4 { color : $h4-foreground !important ; }
 h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
+    font-size: 15px ;
     color: $breadcrumb-current-page-foreground ;
     a {
         color : $breadcrumb-links-foreground ;
