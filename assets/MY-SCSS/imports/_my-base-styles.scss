@@ -74,8 +74,9 @@ h5 { color : $h5-foreground !important ; }
     span[itemprop="itemListElement"] {
         color: white ;
     }
-    span[itemprop="name"] {
-        color: red !important;
+    span[itemprop="name"]:nth-of-type(2) {
+        color: magenta !important;
+        font-size:20px;
     }
  }
  
