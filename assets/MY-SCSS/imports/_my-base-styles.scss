@@ -67,10 +67,6 @@ h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
     font-size: 15px ;
-    color: $breadcrumb-current-page-foreground ;
-    a {
-        color : $breadcrumb-links-foreground ;
-    }
     span:nth-child(1) {
         //background: red;
         color : rgb(60, 255, 0) ;
