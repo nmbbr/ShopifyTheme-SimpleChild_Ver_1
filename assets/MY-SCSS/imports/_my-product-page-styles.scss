@@ -11,5 +11,6 @@ img.mfp-img { background: $product-lightbox-background ; }
 .product-single__thumbnails {
     .grid__item {
         border:2px solid red;
+        clear: none !important;
     }
 }
