@@ -67,12 +67,16 @@ h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav { 
     font-size: 15px ;
-    color : chartreuse ;
+    //color: $breadcrumb-current-page-foreground ;
     .breadcrumb-nav__separator {
         color : $style-1-foreground !important ;
     }
-    /* Links that end in ".org" */
-    //span:nth-of-type(2) a { color: magenta !important; }
+    span[itemprop="itemListElement"] {
+        color: white ;
+    }
+    span[itemprop="name"] {
+        color: red !important;
+    }
  }
  
 
