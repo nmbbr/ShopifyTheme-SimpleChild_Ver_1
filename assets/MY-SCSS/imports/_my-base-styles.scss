@@ -59,11 +59,11 @@ body {
     color : $foreground-color !important ;
  }
 
-h1 { color : $h1-foreground ; }
-h2 { color : $h2-foreground ; }
-h3 { color : $h3-foreground ; }
-h4 { color : $h4-foreground ; }
-h5 { color : $h5-foreground ; }
+h1 { color : $h1-foreground !important ; }
+h2 { color : $h2-foreground !important ; }
+h3 { color : $h3-foreground !important ; }
+h4 { color : $h4-foreground !important ; }
+h5 { color : $h5-foreground !important ; }
 
 .breadcrumb-nav a { color: $breadcrumb-background ; }
 
