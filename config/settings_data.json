@@ -79,7 +79,7 @@
         "settings": {
           "vendor_show": false,
           "collection_sort_enable": true,
-          "collection_tag_enable": false
+          "collection_tag_enable": true
         }
       },
       "product-template": {
