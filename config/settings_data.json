@@ -87,7 +87,7 @@
         "settings": {
           "product_quantity_enable": false,
           "vendor_show": false,
-          "social_sharing_products": false,
+          "social_sharing_products": true,
           "product_description_position": "right",
           "show_extra_tab": true,
           "extra_tab_content": "more-info",
